@@ -55,9 +55,9 @@ public static class ExplorerCore
             Unhollowed_Modules_Folder = loader.UnhollowedModulesFolder
         });
 
-        UERuntimeHelper.Init();
-        ExplorerBehaviour.Setup();
-        UnityCrashPrevention.Init();
+        //UERuntimeHelper.Init();
+        //ExplorerBehaviour.Setup();
+        //UnityCrashPrevention.Init();
     }
 
     // Do a delayed setup so that objects aren't destroyed instantly.
