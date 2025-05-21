@@ -47,17 +47,17 @@ public static class ExplorerCore
         Directory.CreateDirectory(ExplorerFolder);
         ConfigManager.Init(Loader.ConfigHandler);
 
-        Universe.Init(ConfigManager.Startup_Delay_Time.Value, LateInit, Log, new()
+        /*Universe.Init(ConfigManager.Startup_Delay_Time.Value, LateInit, Log, new()
         {
             Disable_EventSystem_Override = ConfigManager.Disable_EventSystem_Override.Value,
             Force_Unlock_Mouse = ConfigManager.Force_Unlock_Mouse.Value,
             Disable_Setup_Force_ReLoad_ManagedAssemblies = ConfigManager.Disable_Setup_Force_ReLoad_ManagedAssemblies.Value,
             Unhollowed_Modules_Folder = loader.UnhollowedModulesFolder
-        });
+        });*/
 
-        //UERuntimeHelper.Init();
-        //ExplorerBehaviour.Setup();
-        //UnityCrashPrevention.Init();
+        //UERuntimeHelper.Init(); // crash is not caused by that
+        //ExplorerBehaviour.Setup(); // crash is not caused by that
+        //UnityCrashPrevention.Init(); // crash is not caused by that
     }
 
     // Do a delayed setup so that objects aren't destroyed instantly.
